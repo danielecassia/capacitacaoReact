@@ -1,0 +1,811 @@
+{
+    "info": {
+        "_postman_id": "eb3bbe14-26a1-41d9-9934-64c2d8a2b967",
+        "name": "CapacitacaoReact",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "User",
+            "item": [
+                {
+                    "name": "Create User",
+                    "id": "b3cbc426-7837-48ac-abe7-277975ffd33e",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "value": "Daniel",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "email",
+                                    "value": "daniel.santos@ijunior.com.br",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "123Seguro&",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "passwordConfirmation",
+                                    "value": "123Seguro&",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/users",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create Admin (Admin)",
+                    "id": "cb4d6b34-605b-4603-bd18-2683687a6da8",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "value": "Daniel",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "email",
+                                    "value": "daniel.santos@ijunior.com.br",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "123Seguro&",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "passwordConfirmation",
+                                    "value": "123Seguro&",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/users/admin/create",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "admin",
+                                "create"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get User by ID",
+                    "id": "1ceb080e-ec40-4fb2-bca5-5d8db56240ec",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/users/user/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "user",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "xTfFavUPLgQnHs8gT7ZNb"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get all Users (Admin)",
+                    "id": "60d18e87-65b8-481f-a16c-6d0e1fa7e390",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/users/admin/all",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "admin",
+                                "all"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Edit profile data",
+                    "id": "145cf8e4-744d-4386-bbe0-0271ec25a405",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "PATCH",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "Name",
+                                    "value": "Admin Supremo",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/users",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Change User Password",
+                    "id": "fa73f480-64a1-4c9f-aeb1-e0e27110f6eb",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "PATCH",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "email",
+                                    "value": "Admin@ijunior.com.br",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "oldPassword",
+                                    "value": "123Seguro&",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "newPassword",
+                                    "value": "Seguro123&",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "newPasswordConfirmation",
+                                    "value": "Seguro123&",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/users/change-password",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "change-password"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete User",
+                    "id": "2104cb1c-8fa0-40ea-a71c-1ced999e8765",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/users",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete User by ID (Admin)",
+                    "id": "94137b2c-77b2-455c-8f9e-88880d90d8f9",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/users/admin/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "admin",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": null
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Login",
+                    "id": "e7ffdc81-20a5-4584-8c28-a4d21d270a0f",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "email",
+                                    "value": "Admin@ijunior.com.br",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "123Seguro&",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/users/login",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "login"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Logout",
+                    "id": "44f06476-9211-49ff-85ed-fe178ee7e6ac",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/users/logout",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "logout"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Forget password (send mail)",
+                    "id": "31012118-1891-418c-8776-e37e0ff8324a",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "email",
+                                    "value": "daniel.santos@ijunior.com.br",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/users/forgot-password",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "forgot-password"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Reset password (with token received)",
+                    "id": "9393c0c2-bf1d-4305-af07-138f082e31f5",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "password",
+                                    "value": "123Seguro&",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "passwordConfirmation",
+                                    "value": "123Seguro&",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/users/reset-password/:token",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "reset-password",
+                                ":token"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "token",
+                                    "value": "3a9344a3c59f485a68995163e4b90d78671364dbe8f0cd8be65fe20a606efe874b74632c69292537bca7cf71974622b934de4acf5254c0157c863702004609f47a65c985d4aa1b43bb7416632d86cc8542e1d7c045748733bd8a4e20300e43a851ea431dd226463742f077de51e89b49232aa9ea30d65dfc76a81642d4a26ad5"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ],
+            "id": "9ef5f67f-eb36-4a22-a493-9ab0d87b0b45"
+        },
+        {
+            "name": "Property",
+            "item": [
+                {
+                    "name": "Create property",
+                    "id": "58c8d090-f1f4-4f07-b2f2-863ddc7d2128",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "images",
+                                    "type": "file",
+                                    "src": [
+                                        "/C:/Users/Daniel/Google Drive/Dans_Portrait_GB.png",
+                                        "/C:/Users/Daniel/Google Drive/ProfileProject.png"
+                                    ]
+                                },
+                                {
+                                    "key": "address",
+                                    "value": "Av. Pres. Antônio Carlos, 6627 - Pampulha, Belo Horizonte - MG, 31270-901",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "type",
+                                    "value": "Buy",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "price",
+                                    "value": "100000000",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "name",
+                                    "value": "UFMG",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "link",
+                                    "value": "https://www.notion.so/ijunior/iJunior-9e4e50af39e140f09f06ce465b42dee1",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "sellerPhone",
+                                    "value": "(31) 97199-3254",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/properties",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "properties"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get all properties (Admin)",
+                    "id": "4ff9f99b-20c6-4c31-b07c-ce0e77922ef4",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/properties/admin/all",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "properties",
+                                "admin",
+                                "all"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Property by ID",
+                    "id": "5980269d-d07a-4c4b-8ec8-714d9208a5e6",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/properties/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "properties",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "S4raVGy6Gdmz1xmMdMdH2"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get properties from current User",
+                    "id": "c71c254d-fb1d-429d-b37e-813857a345e0",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/users/properties",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "properties"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Add image",
+                    "id": "110fb307-d331-458e-8199-4f8b32153d3f",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "images",
+                                    "type": "file",
+                                    "src": [
+                                        "/C:/Users/Daniel/Google Drive/Dans_Portrait_GB.png",
+                                        "/C:/Users/Daniel/Google Drive/Pincel_Portrait_GB.png",
+                                        "/C:/Users/Daniel/Google Drive/ProfileProject.png",
+                                        "/C:/Users/Daniel/Google Drive/ProfileProjectNoFX.png"
+                                    ]
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/properties/add-images/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "properties",
+                                "add-images",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "vqmap-uvD39u94Z838DiU"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove image",
+                    "id": "10f6abcc-7b6f-4d9a-b81f-523c5eb90775",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "PATCH",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"images\": [\r\n        \"IS3FX-eG1-jUIaSGXx9S2\"\r\n    ]\r\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/properties/remove-images/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "properties",
+                                "remove-images",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "lNfjprf6YUrhOXkp1B1t9"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update data",
+                    "id": "bfa7e52c-4518-482e-9c09-0a95ed0cfae1",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "PATCH",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "price",
+                                    "value": "2000",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/properties/update-data/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "properties",
+                                "update-data",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "vqmap-uvD39u94Z838DiU"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete property",
+                    "id": "72bad502-7e8b-4a3b-9b33-3793cd0e4996",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/properties/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "properties",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "lNfjprf6YUrhOXkp1B1t9"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete property (Admin)",
+                    "id": "c3250ced-ea33-4d73-9722-770e7238da93",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/properties/admin/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "properties",
+                                "admin",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "EyrjA9ONpBIWpyxLbll-U"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ],
+            "id": "ab86b943-62dc-4494-9a47-c532f925c2df"
+        },
+        {
+            "name": "Get image",
+            "id": "fffa29f0-9a35-4a51-a9fa-fab29fa6a3e3",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/images/1632170597232.png",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "images",
+                        "1632170597232.png"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ],
+    "auth": {
+        "type": "basic",
+        "basic": [
+            {
+                "key": "username",
+                "value": "<Basic Auth Username>",
+                "type": "string"
+            },
+            {
+                "key": "password",
+                "value": "<Basic Auth Password>",
+                "type": "string"
+            }
+        ]
+    },
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "id": "949f1817-c57f-4379-a4fc-d0d62ed8e32e",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "1569b908-2507-4d90-9b38-9768f8b49b6f",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "id": "505a7d2f-7260-4e31-a068-d090e3cf6b4d",
+            "key": "baseUrl",
+            "value": "http://localhost:3000"
+        }
+    ]
+}

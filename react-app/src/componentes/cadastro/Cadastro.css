@@ -1,0 +1,11 @@
+.Cadastro{
+  margin-top: -20vh;
+  width: 50%;
+}
+
+.Cadastro h1{
+  font-size: 3rem;
+  font-family: Poppins;
+  color: #1D3557;
+  margin-bottom: 10vh;
+}
