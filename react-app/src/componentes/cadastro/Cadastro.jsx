@@ -3,12 +3,14 @@ import FormCadastro from './formCadastro/formCadastro';
 import Logo from "../../logo.svg";
 import {Link} from 'react-router-dom'
 
+
 export default function Login() {
   return(
     <div className="Cadastro">
       <div className="conteudo">
       </div>
       <div className="left-side">
+
         <Link to="/login">
             <img src={Logo}
             alt="seta"
@@ -23,8 +25,6 @@ export default function Login() {
         <h1>Cadastro</h1>
         <FormCadastro/>
       </div>
-
-
     </div>
   )
 }
