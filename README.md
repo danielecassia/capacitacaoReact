@@ -1,7 +1,4 @@
 ### .env
-
-teste-gitpush: Gabriel Alves
-
 O arquivo `.env` deve ficar na root com as seguintes variáveis:
 ```
 DB = nome do banco de dados

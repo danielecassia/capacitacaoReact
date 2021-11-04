@@ -1,3 +1,7 @@
+.fromCadastro {
+  width: 50% !important;
+  margin-left:25%;
+}
 .BtnCadastro{
   font-family: Poppins;
   font-size: 36px;
@@ -5,3 +9,4 @@
   border: none !important;
   width: 40% !important;
 }
+
