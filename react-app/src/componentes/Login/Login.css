@@ -1,0 +1,55 @@
+.Login{
+    width: 40%;
+    height: 60vh;
+    color: #1D3557;
+}
+
+.Login h1{
+    padding-bottom: 20px;
+    font-size: 3rem;
+    font-family: Poppins;
+    color: #1D3557;
+}
+
+.Login form{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Login form input{
+    background-color: #F1FAEE;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.Login form input[type=submit]{
+    width: 45%;
+    background-color: #457B9D;
+    color: #F1FAEE;
+}
+
+.Login form input[type=text]{
+    width: 60%;
+}
+
+.Login form input[type=text]:focus{
+    outline: transparent;
+}
+
+.Login form input[type=text]::placeholder{
+    padding: 5%;
+}
+
+.Login p{
+    margin-top: 20px;
+}
+
+.Login .login-submit{
+    text-decoration: none;
+    color: #1D3557;
+}

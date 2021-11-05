@@ -7,21 +7,19 @@
 }
 .Cadastro .left-side{
   width:10%;
-  position:relative;
-  top:0px;
-  left:0px;
-  border:1px solid red;
+  padding-top: 2vh;
 }
 
 .Cadastro .right-side{
+  display: flex;
+  flex-direction: column;
   width:90%;
-  border:1px solid blue;
+  padding-top: 12%;
+  padding-right: 12%;
 }
 
 .Cadastro h1{
-  margin-top:5%;
   font-size: 3rem;
-  font-family: Poppins;
   color: #1D3557;
   margin-bottom: 10vh;
 }

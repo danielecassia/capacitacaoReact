@@ -11,11 +11,14 @@ export default function App(props) {
     <div className="App">
         <Router>
           <Switch>
+            <Route path="/cadastro">
+              <Cadastro/>
+            </Route>
             <Route path="/login">
               <Login/>
             </Route>
             <Route path="/">
-              <Cadastro/>
+              <Login/>
             </Route>
           </Switch>
         </Router>
