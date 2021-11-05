@@ -33,6 +33,10 @@
   color: #F1FAEE;
 }
 
+.fromCadastro form [type=submit ]:disabled{
+  background-color: #7E8F99;
+}
+
 .fromCadastro form input[type=text]{
   width: 40vh;
 }
@@ -65,8 +69,6 @@
   text-decoration: none;
   color: #1D3557;
 }
-
-
 
 .fromCadastro table tr[class=separar]{
   display:block;
