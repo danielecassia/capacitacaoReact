@@ -27,29 +27,31 @@
     margin: 5px;
 }
 
+.Login form input:focus{
+    outline: transparent;
+}
+
+
 .Login form input[type=submit]{
     width: 45%;
     background-color: #457B9D;
     color: #F1FAEE;
 }
 
-.Login form input[type=text]{
-    width: 60%;
+.Login form input[type=submit ]:disabled{
+    background-color: #7E8F99;
 }
 
-.Login form input[type=text]:focus{
-    outline: transparent;
+.Login form input[type=text]{
+    width: 60%;
 }
 
 .Login form input[type=text]::placeholder{
     padding: 5%;
 }
+
 .Login form input[type=password]{
     width: 60%;
-}
-
-.Login form input[type=password]:focus{
-    outline: transparent;
 }
 
 .Login form input[type=password]::placeholder{
