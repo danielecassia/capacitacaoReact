@@ -9,7 +9,7 @@ export default function Login(props) {
 
             <form action="">
                 <input type="text" placeholder="E-mail" />
-                <input type="text" placeholder="Senha" />
+                <input type="password" placeholder="Senha" />
                 <input type="submit" value="Entrar" />
             </form>
             <p>Não tem uma conta ainda? <Link to="/cadastro" className="login-submit"><strong>Cadastre-se</strong></Link></p>

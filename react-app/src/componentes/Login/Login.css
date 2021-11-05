@@ -44,6 +44,17 @@
 .Login form input[type=text]::placeholder{
     padding: 5%;
 }
+.Login form input[type=password]{
+    width: 60%;
+}
+
+.Login form input[type=password]:focus{
+    outline: transparent;
+}
+
+.Login form input[type=password]::placeholder{
+    padding: 5%;
+}
 
 .Login p{
     margin-top: 20px;
