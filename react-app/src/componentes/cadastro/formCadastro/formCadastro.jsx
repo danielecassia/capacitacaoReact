@@ -1,47 +1,26 @@
 import './formCadastro.css';
-import { Form, Button, Col, Row} from 'react-bootstrap'
 
 export default function FormCadastro() {
 
   return (
     <div className="fromCadastro">
-      <Form>
-        <Row>
-          <Col>
-            <Form.Group className="mb-3 fromInput" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Nome" />
-              <Form.Text className="text-muted">
-              </Form.Text>
-            </Form.Group>
-          </Col>
-          <Col>
-            <Form.Group className="mb-3 fromInput" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Email" />
-              <Form.Text className="text-muted">
-              </Form.Text>
-            </Form.Group>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Form.Group className="mb-3 fromInput" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Senha" />
-              <Form.Text className="text-muted">
-              </Form.Text>
-            </Form.Group>
-          </Col>
-          <Col>
-            <Form.Group className="mb-3 fromInput" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Repetir senha" />
-              <Form.Text className="text-muted">
-              </Form.Text>
-            </Form.Group>
-          </Col>
-        </Row>
+      <h1>Cadastro</h1>
 
-        <Button variant="primary" type="submit" className="BtnCadastro">
-          Confirmar
-        </Button>
-    </Form>
+      <form action="">
+        <table>
+          <tr>
+            <td> <input type="text" placeholder="Nome" /> </td>
+            <td> <input type="text" placeholder="E-mail" /> </td>
+          </tr>
+          <tr class="separar"></tr>
+          <tr>
+            <td> <input type="password" placeholder="Senha" /> </td>
+            <td> <input type="password" placeholder="Repetir Senha" /> </td>
+          </tr>
+        </table>
+      
+        <input type="submit" value="Cadastrar" />
+      </form>
     </div>
-  )}
+  )
+}

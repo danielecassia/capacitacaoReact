@@ -2,7 +2,6 @@
   width: 100%;
   height: 100vh;
 
-  display:flex;
   flex-direction: row;
 }
 .Cadastro .left-side{
@@ -11,15 +10,10 @@
 }
 
 .Cadastro .right-side{
+  margin-top: 12vh;
   display: flex;
-  flex-direction: column;
-  width:90%;
-  padding-top: 12%;
-  padding-right: 12%;
-}
-
-.Cadastro h1{
-  font-size: 3rem;
-  color: #1D3557;
-  margin-bottom: 10vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:100%;
 }

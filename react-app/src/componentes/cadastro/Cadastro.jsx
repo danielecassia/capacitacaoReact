@@ -18,7 +18,6 @@ export default function Login() {
       </div>
 
       <div className="right-side">
-        <h1>Cadastro</h1>
         <FormCadastro/>
       </div>
     </div>
