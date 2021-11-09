@@ -1,0 +1,91 @@
+.fromCadastro{
+    width: 40%;
+    height: 60vh;
+    color: #1D3557;
+  }
+  
+  .fromCadastro h1{
+    padding-bottom: 20px;
+    font-size: 3rem;
+    font-family: Poppins;
+    color: #1D3557;
+  }
+  
+  .fromCadastro form{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fromCadastro form input{
+    background-color: #F1FAEE;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .fromCadastro form input[type=submit]{
+    width: 45%;
+    background-color: #457B9D;
+    color: #F1FAEE;
+  }
+  
+  .fromCadastro form [type=submit ]:disabled{
+    background-color: #7E8F99;
+  }
+  
+  .fromCadastro form input[type=text]{
+    width: 40vh;
+  }
+  .fromCadastro form .input100 input[type=text]{
+    width: 81vh;
+    margin-bottom:50px;
+  }
+  
+  .fromCadastro form input[type=text]:focus{
+    outline: transparent;
+  }
+  
+  .fromCadastro form input[type=text]::placeholder{
+    padding: 5%;
+  }
+  
+  .fromCadastro form input[type=password]{
+    width: 40vh;
+  }
+  
+  .fromCadastro form input[type=password]:focus{
+    outline: transparent;
+  }
+  
+  .fromCadastro form input[type=password]::placeholder{
+    padding: 5%;
+  }
+  
+  .fromCadastro p{
+    margin-top: 20px;
+  }
+  
+  .fromCadastro .login-submit{
+    text-decoration: none;
+    color: #1D3557;
+  }
+  
+  .fromCadastro table tr[class=separar]{
+    display:block;
+    margin-bottom:50px;
+    }
+
+    .fromCadastro form select{
+        background-color: #F1FAEE;
+        border: none;
+        border-radius: 10px;
+        margin: 5px;
+        width: 40vh;
+        outline: transparent;
+        padding: 1.1vh;
+        color: gray;
+    }
