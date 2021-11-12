@@ -30,7 +30,7 @@ export default function Login(props) {
                 <input type="submit" value="Entrar" ref={ myBtn } disabled="true"/>
             </form>
             <p>Não tem uma conta ainda? <Link to="/cadastro" className="login-submit"><strong>Cadastre-se</strong></Link></p>
-            <p>Registrar Imóvel <Link to="/imovelregistrar" className="login-submit"><strong>Imovel</strong></Link></p>
+            <p>Registrar Imóvel <Link to="/InSystem/imovelregistrar" className="login-submit"><strong>Imovel</strong></Link></p>
 
         </div>
     )

@@ -2,7 +2,7 @@ import './App.css';
 
 import Cadastro from './componentes/cadastro/Cadastro';
 import Login from './componentes/Login/Login';
-import Teste from './componentes/ImovelRegistrar/ImovelRegistrar';
+import InSystem from './views/InSystem/InSystem';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,8 +18,8 @@ export default function App(props) {
             <Route path="/login">
               <Login/>
             </Route>
-            <Route path="/imovelregistrar">
-              <Teste/>
+            <Route path="/InSystem">
+              <InSystem/>
             </Route>
             <Route path="/">
               <Login/>
