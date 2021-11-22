@@ -6,6 +6,7 @@ import InSystem from './views/InSystem/InSystem';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
 
 export default function App(props) {
   return (
@@ -16,7 +17,7 @@ export default function App(props) {
               <Cadastro/>
             </Route>
             <Route path="/login">
-              <Login/>
+                <Login/>
             </Route>
             <Route path="/InSystem">
               <InSystem/>
