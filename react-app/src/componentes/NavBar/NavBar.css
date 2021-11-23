@@ -22,7 +22,7 @@
     display: flex;
     height: 8vh;
     border: 5px solid rgba(0, 0, 0, 0) ;
-    border-left: 5px solid #457B9D;
+    border-left: 5px solid rgba(69, 123, 157, 0);
     margin-top: 30px;
 
     justify-content: center;
