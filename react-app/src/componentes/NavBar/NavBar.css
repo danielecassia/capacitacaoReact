@@ -28,3 +28,8 @@
     justify-content: center;
     align-items: center;
 }
+
+.NavBar > div:nth-child(1) svg{
+    width: 70%;
+    height: 70%;
+}

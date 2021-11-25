@@ -5,13 +5,23 @@ import './NavBar.css'
 
 
 export default function NavBar(props){
-    // const [navOption, setNavOption] = useState(); //get the url to set who will be show
 
     function setNavOption(nthOpt) {
         const n = document.getElementsByClassName("NavOpt");
 
         for (let i = 0; i < n.length; i++) {
             n[i].style.borderLeft =  " 5px solid rgba(69, 123, 157, 0)";
+
+            const numPaths = n[i].children[0].children[0].childElementCount;
+            const paths =  n[i].children[0].children[0].children;
+            for (let j = 0; j  < numPaths; j++) {
+                paths[j].setAttribute("fill", "#1D3557");
+            }
+        }
+
+        const pathsOfSvgOpt = n[nthOpt].children[0].children[0].children;
+        for (let i = 0; i < pathsOfSvgOpt.length; i++) {
+            pathsOfSvgOpt[i].setAttribute("fill", "#457B9D");
         }
         n[nthOpt].style.borderLeft =  " 5px solid rgba(69, 123, 157, 1)";
     }
@@ -32,7 +42,7 @@ export default function NavBar(props){
                 <div className="NavOpt">
                     <Link onClick={() => setNavOption(1)} to="/InSystem/imovelregistrar">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 4C12.96 4 4 12.96 4 24C4 35.04 12.96 44 24 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 24 4ZM32 26H26V32C26 33.1 25.1 34 24 34C22.9 34 22 33.1 22 32V26H16C14.9 26 14 25.1 14 24C14 22.9 14.9 22 16 22H22V16C22 14.9 22.9 14 24 14C25.1 14 26 14.9 26 16V22H32C33.1 22 34 22.9 34 24C34 25.1 33.1 26 32 26Z" fill="#457B9D"/>
+                            <path d="M24 4C12.96 4 4 12.96 4 24C4 35.04 12.96 44 24 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 24 4ZM32 26H26V32C26 33.1 25.1 34 24 34C22.9 34 22 33.1 22 32V26H16C14.9 26 14 25.1 14 24C14 22.9 14.9 22 16 22H22V16C22 14.9 22.9 14 24 14C25.1 14 26 14.9 26 16V22H32C33.1 22 34 22.9 34 24C34 25.1 33.1 26 32 26Z" fill="#1D3557"/>
                         </svg>
                     </Link>
                 </div>
@@ -40,7 +50,7 @@ export default function NavBar(props){
                 <div className="NavOpt">
                     <Link onClick={() => setNavOption(2)} to="/InSystem/imovelregistrar">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M32 22C35.32 22 37.98 19.32 37.98 16C37.98 12.68 35.32 10 32 10C28.68 10 26 12.68 26 16C26 19.32 28.68 22 32 22ZM16 22C19.32 22 21.98 19.32 21.98 16C21.98 12.68 19.32 10 16 10C12.68 10 10 12.68 10 16C10 19.32 12.68 22 16 22ZM16 26C11.34 26 2 28.34 2 33V36C2 37.1 2.9 38 4 38H28C29.1 38 30 37.1 30 36V33C30 28.34 20.66 26 16 26ZM32 26C31.42 26 30.76 26.04 30.06 26.1C30.1 26.12 30.12 26.16 30.14 26.18C32.42 27.84 34 30.06 34 33V36C34 36.7 33.86 37.38 33.64 38H44C45.1 38 46 37.1 46 36V33C46 28.34 36.66 26 32 26Z" fill="#457B9D"/>
+                            <path d="M32 22C35.32 22 37.98 19.32 37.98 16C37.98 12.68 35.32 10 32 10C28.68 10 26 12.68 26 16C26 19.32 28.68 22 32 22ZM16 22C19.32 22 21.98 19.32 21.98 16C21.98 12.68 19.32 10 16 10C12.68 10 10 12.68 10 16C10 19.32 12.68 22 16 22ZM16 26C11.34 26 2 28.34 2 33V36C2 37.1 2.9 38 4 38H28C29.1 38 30 37.1 30 36V33C30 28.34 20.66 26 16 26ZM32 26C31.42 26 30.76 26.04 30.06 26.1C30.1 26.12 30.12 26.16 30.14 26.18C32.42 27.84 34 30.06 34 33V36C34 36.7 33.86 37.38 33.64 38H44C45.1 38 46 37.1 46 36V33C46 28.34 36.66 26 32 26Z" fill="#1D3557"/>
                         </svg>  
                     </Link>
                 </div>
